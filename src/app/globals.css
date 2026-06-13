@@ -1,26 +1,96 @@
 @import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@theme {
+  --color-brand: #0099FF;
+  --color-background: #000000;
+  --color-foreground: #FFFFFF;
+  --color-surface: #1A1A1A;
+  --color-muted: #555555;
+  --color-gray-900: #1A1A1A;
+  --color-gray-700: #333333;
+  --color-gray-500: #555555;
+  --color-gray-300: #888888;
+  --color-success: #0099FF;
+  --color-error: #FF3B30;
+  --color-warning: #FF9500;
+  
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 24px;
+  --radius-full: 9999px;
+
+  --font-sans: var(--font-inter), sans-serif;
+  --font-playfair: var(--font-playfair), serif;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #FFFFFF;
+  --radius: 0.65rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  /* Hide UI elements that shouldn't be printed */
+  header, footer, button, .fixed, [role="dialog"], .sticky {
+    display: none !important;
+  }
+
+  /* Make sure background colors in cards show up */
+  .bg-surface, .bg-black, [class*="bg-gray-"], [class*="bg-brand"] {
+    background-color: #f8f9fa !important;
+    color: black !important;
+    border: 1px solid #e5e7eb !important;
+  }
+  
+  /* Force text colors */
+  [class*="text-gray-"], .text-white {
+    color: #374151 !important;
+  }
+  
+  /* Remove shadows */
+  * {
+    box-shadow: none !important;
+  }
+  
+  /* Ensure page breaks don't happen inside cards */
+  .rounded-2xl, .rounded-xl {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
 }

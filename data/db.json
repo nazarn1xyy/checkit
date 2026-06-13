@@ -1,0 +1,226 @@
+{
+  "users": [
+    {
+      "id": "hqshqlnpt",
+      "name": "Administrator",
+      "email": "admin",
+      "role": "admin",
+      "plan": "free",
+      "tokens": 3340,
+      "analysesCount": 0,
+      "createdAt": 1781349995074,
+      "lastActiveAt": 1781376577603
+    },
+    {
+      "id": "pqo8aiirm",
+      "name": "User",
+      "email": "burmalda@gmail.com",
+      "role": "user",
+      "plan": "free",
+      "tokens": 3340,
+      "analysesCount": 0,
+      "createdAt": 1781352262735,
+      "lastActiveAt": 1781379501485
+    },
+    {
+      "id": "2llyzms1j",
+      "name": "User",
+      "email": "kovtunann2008@gmail.com",
+      "role": "user",
+      "plan": "free",
+      "tokens": 3340,
+      "analysesCount": 0,
+      "createdAt": 1781356302921,
+      "lastActiveAt": 1781356302921
+    }
+  ],
+  "events": [
+    {
+      "type": "questions",
+      "userEmail": null,
+      "idea": "відкрити свій власний коптильний цех для виготовлення мʼяс, ковбас, риби. чи є в цьому перспектива і з чого краще починати?",
+      "tool": null,
+      "success": true,
+      "durationMs": 10162,
+      "error": null,
+      "id": "eolge7tyc",
+      "timestamp": 1781352286347
+    },
+    {
+      "type": "questions",
+      "userEmail": null,
+      "idea": "відкрити свій власний коптильний цех для виготовлення мʼяс, ковбас, риби. чи є в цьому перспектива і з чого краще починати?",
+      "tool": null,
+      "success": true,
+      "durationMs": 10358,
+      "error": null,
+      "id": "x185q0sb4",
+      "timestamp": 1781352286516
+    },
+    {
+      "type": "analyze",
+      "userEmail": null,
+      "idea": "відкрити свій власний коптильний цех для виготовлення мʼяс, ковбас, риби. чи є в цьому перспектива і з чого краще починати?",
+      "tool": null,
+      "success": true,
+      "durationMs": 4371,
+      "error": null,
+      "id": "dqd76976m",
+      "timestamp": 1781352395657
+    },
+    {
+      "type": "questions",
+      "userEmail": null,
+      "idea": "оренда павербанків для студентів",
+      "tool": null,
+      "success": true,
+      "durationMs": 3946,
+      "error": null,
+      "id": "9s6mog9ad",
+      "timestamp": 1781356310363
+    },
+    {
+      "type": "questions",
+      "userEmail": null,
+      "idea": "оренда павербанків для студентів",
+      "tool": null,
+      "success": true,
+      "durationMs": 4773,
+      "error": null,
+      "id": "wbtk35sue",
+      "timestamp": 1781356311169
+    },
+    {
+      "type": "analyze",
+      "userEmail": null,
+      "idea": "оренда павербанків для студентів",
+      "tool": null,
+      "success": true,
+      "durationMs": 3931,
+      "error": null,
+      "id": "l2svkt9i0",
+      "timestamp": 1781356403371
+    },
+    {
+      "type": "questions",
+      "userEmail": null,
+      "idea": "Трекер здорових звичок з ШІ",
+      "tool": null,
+      "success": true,
+      "durationMs": 4115,
+      "error": null,
+      "id": "2jxz6ax9j",
+      "timestamp": 1781357772577
+    },
+    {
+      "type": "questions",
+      "userEmail": null,
+      "idea": "Трекер здорових звичок з ШІ",
+      "tool": null,
+      "success": true,
+      "durationMs": 5125,
+      "error": null,
+      "id": "qcav08wsq",
+      "timestamp": 1781357773571
+    },
+    {
+      "type": "analyze",
+      "userEmail": null,
+      "idea": "Трекер здорових звичок з ШІ",
+      "tool": null,
+      "success": true,
+      "durationMs": 3678,
+      "error": null,
+      "id": "v4wqk092l",
+      "timestamp": 1781357806805
+    },
+    {
+      "type": "questions",
+      "userEmail": null,
+      "idea": "піцерія з піцею на дровах\n",
+      "tool": null,
+      "success": true,
+      "durationMs": 3304,
+      "error": null,
+      "id": "x9bv5pvzh",
+      "timestamp": 1781379082277
+    },
+    {
+      "type": "questions",
+      "userEmail": null,
+      "idea": "піцерія з піцею на дровах\n",
+      "tool": null,
+      "success": true,
+      "durationMs": 4173,
+      "error": null,
+      "id": "4ns9uz10j",
+      "timestamp": 1781379083118
+    },
+    {
+      "type": "analyze",
+      "userEmail": null,
+      "idea": "піцерія з піцею на дровах\n",
+      "tool": null,
+      "success": true,
+      "durationMs": 4592,
+      "error": null,
+      "id": "wjuzv41ru",
+      "timestamp": 1781379109847
+    },
+    {
+      "type": "chat",
+      "userEmail": null,
+      "idea": "піцерія з піцею на дровах\n",
+      "tool": null,
+      "success": true,
+      "durationMs": 6070,
+      "error": null,
+      "id": "7f5cycc4e",
+      "timestamp": 1781379145306
+    },
+    {
+      "type": "questions",
+      "userEmail": null,
+      "idea": "Піцерія в центрі міста ",
+      "tool": null,
+      "success": true,
+      "durationMs": 4462,
+      "error": null,
+      "id": "dqirub9rp",
+      "timestamp": 1781379524384
+    },
+    {
+      "type": "questions",
+      "userEmail": null,
+      "idea": "Піцерія в центрі міста ",
+      "tool": null,
+      "success": true,
+      "durationMs": 4502,
+      "error": null,
+      "id": "3an1pz1ic",
+      "timestamp": 1781379524388
+    },
+    {
+      "type": "analyze",
+      "userEmail": null,
+      "idea": "Піцерія в центрі міста ",
+      "tool": null,
+      "success": true,
+      "durationMs": 4434,
+      "error": null,
+      "id": "4tc88pkb9",
+      "timestamp": 1781379551144
+    }
+  ],
+  "settings": {
+    "freeTokens": 3340,
+    "tokensPerAnalysis": 334,
+    "planTokens": {
+      "3month": 10000,
+      "6month": 25000,
+      "year": 60000
+    },
+    "maintenanceMode": false,
+    "chatEnabled": true
+  }
+}

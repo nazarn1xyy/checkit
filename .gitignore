@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Hackathon temporary files
+presentation.html
+*.pdf
+add_extra_slides.js
+supabase.sql
+GEMINI.md
+AGENTS.md
+CLAUDE.md
+ngrok.log
