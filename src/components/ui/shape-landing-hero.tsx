@@ -36,7 +36,7 @@ function ElegantShape({
                 ease: [0.23, 0.86, 0.39, 0.96],
                 opacity: { duration: 1.2 },
             }}
-            className={cn("absolute", className)}
+            className={cn("absolute scale-[0.5] sm:scale-75 md:scale-100 origin-center", className)}
         >
             <motion.div
                 animate={{
