@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 export const SilkBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
