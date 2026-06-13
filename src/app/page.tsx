@@ -8,8 +8,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { useTokens, TOKENS_PER_ANALYSIS_COST } from '@/contexts/TokenContext';
 import { Sparkles, Lock, MessageSquare, Cpu, FileText, ChevronDown, ShoppingCart, Bot, GraduationCap, HeartPulse, Coins } from 'lucide-react';
 import { ReviewMarquee, reviews } from '@/components/ui/ReviewMarquee';
-
-import { HeroGeometric } from '@/components/ui/shape-landing-hero';
+import { SilkBackground } from '@/components/ui/silk-background-animation';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
@@ -45,7 +44,7 @@ export default function Home() {
 
   return (
     <div className="relative w-full min-h-screen">
-      <HeroGeometric />
+      <SilkBackground />
       <div className="relative z-10 container mx-auto px-4 py-6 md:py-10 max-w-5xl block text-center">
         <div className="w-full max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
         <div className="inline-flex items-center space-x-2 bg-surface border border-gray-700 rounded-full px-4 py-1.5 mb-6">
