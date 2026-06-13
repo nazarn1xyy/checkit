@@ -119,6 +119,52 @@ export function HeroGeometric() {
                     gradient="from-teal-500/[0.15]"
                     className="left-[20%] md:left-[25%] top-[85%] md:top-[90%]"
                 />
+
+                {/* Additional scattered shapes */}
+                <ElegantShape
+                    delay={0.45}
+                    width={400}
+                    height={100}
+                    rotate={5}
+                    gradient="from-indigo-500/[0.15]"
+                    className="right-[10%] md:right-[15%] top-[15%] md:top-[20%]"
+                />
+
+                <ElegantShape
+                    delay={0.65}
+                    width={250}
+                    height={70}
+                    rotate={-10}
+                    gradient="from-sky-400/[0.15]"
+                    className="left-[30%] md:left-[35%] top-[35%] md:top-[40%]"
+                />
+
+                <ElegantShape
+                    delay={0.8}
+                    width={350}
+                    height={90}
+                    rotate={15}
+                    gradient="from-cyan-400/[0.15]"
+                    className="right-[30%] md:right-[35%] top-[55%] md:top-[60%]"
+                />
+
+                <ElegantShape
+                    delay={0.35}
+                    width={280}
+                    height={75}
+                    rotate={-5}
+                    gradient="from-blue-600/[0.15]"
+                    className="left-[15%] md:left-[20%] top-[75%] md:top-[80%]"
+                />
+
+                <ElegantShape
+                    delay={0.55}
+                    width={450}
+                    height={110}
+                    rotate={18}
+                    gradient="from-teal-400/[0.15]"
+                    className="right-[25%] md:right-[30%] top-[95%] md:top-[98%]"
+                />
             </div>
 
             {/* Gradient mask to blend into the rest of the page at the very bottom */}
