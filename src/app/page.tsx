@@ -49,9 +49,14 @@ export default function Home() {
           <span className="text-sm font-medium text-gray-300">AI оцінка за секунди</span>
         </div>
         
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-          Перевір життєздатність своєї <span className="text-brand font-playfair italic font-medium">бізнес-ідеї</span>
-        </h1>
+        <div className="relative inline-block w-full">
+          {/* Glowing aura effect */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] md:w-[40%] h-[120%] bg-brand/20 blur-[80px] md:blur-[120px] rounded-full animate-pulse -z-10 pointer-events-none mix-blend-screen"></div>
+          
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 relative z-10">
+            Перевір життєздатність своєї <span className="text-brand font-playfair italic font-medium relative inline-block">бізнес-ідеї</span>
+          </h1>
+        </div>
         
         <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
           Штучний інтелект проаналізує ринок, конкурентів, ризики та бізнес-модель, 
