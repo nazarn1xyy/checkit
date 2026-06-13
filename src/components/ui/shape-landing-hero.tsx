@@ -79,91 +79,91 @@ export function HeroGeometric() {
                     delay={0.3}
                     width={600}
                     height={140}
-                    rotate={12}
+                    rotate={32}
                     gradient="from-blue-500/[0.15]"
-                    className="left-[-10%] md:left-[-5%] top-[5%] md:top-[10%]"
+                    className="left-[-5%] md:left-[-10%] top-[8%] md:top-[12%]"
                 />
 
                 <ElegantShape
-                    delay={0.5}
-                    width={500}
-                    height={120}
+                    delay={0.8}
+                    width={400}
+                    height={100}
                     rotate={-15}
                     gradient="from-sky-500/[0.15]"
-                    className="right-[-5%] md:right-[0%] top-[25%] md:top-[30%]"
+                    className="right-[15%] md:right-[20%] top-[15%] md:top-[18%]"
                 />
 
                 <ElegantShape
                     delay={0.4}
                     width={300}
                     height={80}
-                    rotate={-8}
+                    rotate={-45}
                     gradient="from-cyan-500/[0.15]"
-                    className="left-[5%] md:left-[10%] top-[45%] md:top-[50%]"
+                    className="left-[45%] md:left-[55%] top-[5%] md:top-[8%]"
                 />
 
                 <ElegantShape
                     delay={0.6}
-                    width={200}
-                    height={60}
+                    width={500}
+                    height={120}
                     rotate={20}
                     gradient="from-blue-400/[0.15]"
-                    className="right-[15%] md:right-[20%] top-[65%] md:top-[70%]"
+                    className="left-[10%] md:left-[5%] top-[35%] md:top-[40%]"
                 />
 
                 <ElegantShape
                     delay={0.7}
-                    width={150}
-                    height={40}
+                    width={250}
+                    height={60}
                     rotate={-25}
                     gradient="from-teal-500/[0.15]"
-                    className="left-[20%] md:left-[25%] top-[85%] md:top-[90%]"
+                    className="right-[-5%] md:right-[-10%] top-[40%] md:top-[45%]"
                 />
 
                 {/* Additional scattered shapes */}
                 <ElegantShape
                     delay={0.45}
-                    width={400}
-                    height={100}
-                    rotate={5}
+                    width={450}
+                    height={110}
+                    rotate={65}
                     gradient="from-indigo-500/[0.15]"
-                    className="right-[10%] md:right-[15%] top-[15%] md:top-[20%]"
+                    className="left-[35%] md:left-[40%] top-[55%] md:top-[60%]"
                 />
 
                 <ElegantShape
                     delay={0.65}
-                    width={250}
-                    height={70}
-                    rotate={-10}
+                    width={350}
+                    height={80}
+                    rotate={-50}
                     gradient="from-sky-400/[0.15]"
-                    className="left-[30%] md:left-[35%] top-[35%] md:top-[40%]"
+                    className="right-[20%] md:right-[25%] top-[70%] md:top-[75%]"
                 />
 
                 <ElegantShape
-                    delay={0.8}
-                    width={350}
-                    height={90}
+                    delay={0.9}
+                    width={280}
+                    height={70}
                     rotate={15}
                     gradient="from-cyan-400/[0.15]"
-                    className="right-[30%] md:right-[35%] top-[55%] md:top-[60%]"
+                    className="left-[-5%] md:left-[0%] top-[80%] md:top-[85%]"
                 />
 
                 <ElegantShape
                     delay={0.35}
-                    width={280}
-                    height={75}
+                    width={600}
+                    height={150}
                     rotate={-5}
                     gradient="from-blue-600/[0.15]"
-                    className="left-[15%] md:left-[20%] top-[75%] md:top-[80%]"
+                    className="right-[35%] md:right-[45%] top-[90%] md:top-[95%]"
                 />
 
                 <ElegantShape
                     delay={0.55}
-                    width={450}
-                    height={110}
-                    rotate={18}
+                    width={300}
+                    height={80}
+                    rotate={-38}
                     gradient="from-teal-400/[0.15]"
-                    className="right-[25%] md:right-[30%] top-[95%] md:top-[98%]"
+                    className="right-[-5%] md:right-[5%] top-[85%] md:top-[88%]"
                 />
             </div>
 
