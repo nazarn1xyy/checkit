@@ -273,7 +273,7 @@ export function PricingModal() {
 
         {/* Modal */}
         <div
-          className="relative bg-surface border border-gray-800 rounded-3xl shadow-2xl w-full max-w-4xl max-h-[95vh] overflow-hidden z-10 animate-in fade-in zoom-in-95 duration-200"
+          className="relative bg-surface border border-gray-800 rounded-3xl shadow-2xl w-full max-w-4xl max-h-[95vh] overflow-y-auto z-10 animate-in fade-in zoom-in-95 duration-200"
         >
           {/* Close button */}
           <button
