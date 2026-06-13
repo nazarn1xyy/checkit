@@ -9,6 +9,8 @@ import { useTokens, TOKENS_PER_ANALYSIS_COST } from '@/contexts/TokenContext';
 import { Sparkles, Lock, MessageSquare, Cpu, FileText, ChevronDown, ShoppingCart, Bot, GraduationCap, HeartPulse, Coins } from 'lucide-react';
 import { ReviewMarquee, reviews } from '@/components/ui/ReviewMarquee';
 
+import { HeroGeometric } from '@/components/ui/shape-landing-hero';
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
@@ -42,8 +44,9 @@ export default function Home() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-6 md:py-10 max-w-5xl block text-center">
-      <div className="w-full max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
+    <HeroGeometric>
+      <div className="container mx-auto px-4 py-6 md:py-10 max-w-5xl block text-center mt-12 md:mt-24">
+        <div className="w-full max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
         <div className="inline-flex items-center space-x-2 bg-surface border border-gray-700 rounded-full px-4 py-1.5 mb-6">
           <Sparkles className="w-4 h-4 text-brand" />
           <span className="text-sm font-medium text-gray-300">AI оцінка за секунди</span>
@@ -266,5 +269,6 @@ export default function Home() {
           </div>
         </div>
     </div>
+    </HeroGeometric>
   );
 }
