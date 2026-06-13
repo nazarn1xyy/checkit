@@ -44,8 +44,12 @@ type Database = {
 const DB_PATH = path.join(process.cwd(), 'data', 'db.json');
 
 function ensureDir() {
-  const dir = path.dirname(DB_PATH);
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  try {
+    const dir = path.dirname(DB_PATH);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  } catch (e) {
+    // Ignore read-only file system error on Vercel
+  }
 }
 
 // ── Read / Write ───────────────────────────────────────
@@ -63,15 +67,27 @@ function readDb(): Database {
         chatEnabled: true,
       },
     };
-    fs.writeFileSync(DB_PATH, JSON.stringify(empty, null, 2));
+    try {
+      fs.writeFileSync(DB_PATH, JSON.stringify(empty, null, 2));
+    } catch (e) {
+      // Ignore on Vercel
+    }
     return empty;
   }
-  return JSON.parse(fs.readFileSync(DB_PATH, 'utf-8'));
+  try {
+    return JSON.parse(fs.readFileSync(DB_PATH, 'utf-8'));
+  } catch (e) {
+    return { users: [], events: [], settings: { freeTokens: 3340, tokensPerAnalysis: 334, planTokens: {}, maintenanceMode: false, chatEnabled: true } };
+  }
 }
 
 function writeDb(db: Database) {
   ensureDir();
-  fs.writeFileSync(DB_PATH, JSON.stringify(db, null, 2));
+  try {
+    fs.writeFileSync(DB_PATH, JSON.stringify(db, null, 2));
+  } catch (e) {
+    // Ignore read-only file system error on Vercel
+  }
 }
 
 // ── Users ──────────────────────────────────────────────
