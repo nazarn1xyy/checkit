@@ -51,7 +51,7 @@ export default function Home() {
         
         <div className="relative inline-block w-full">
           {/* Glowing aura effect */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] md:w-[40%] h-[120%] bg-brand/20 blur-[80px] md:blur-[120px] rounded-full animate-pulse -z-10 pointer-events-none mix-blend-screen"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] md:w-[50%] h-[150%] bg-blue-600/60 blur-[60px] md:blur-[80px] rounded-full animate-pulse -z-10 pointer-events-none"></div>
           
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 relative z-10">
             Перевір життєздатність своєї <span className="text-brand font-playfair italic font-medium relative inline-block">бізнес-ідеї</span>
