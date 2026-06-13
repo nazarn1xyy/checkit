@@ -44,8 +44,9 @@ export default function Home() {
   };
 
   return (
-    <HeroGeometric>
-      <div className="container mx-auto px-4 py-6 md:py-10 max-w-5xl block text-center mt-12 md:mt-24">
+    <div className="relative w-full min-h-screen">
+      <HeroGeometric />
+      <div className="relative z-10 container mx-auto px-4 py-6 md:py-10 max-w-5xl block text-center">
         <div className="w-full max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
         <div className="inline-flex items-center space-x-2 bg-surface border border-gray-700 rounded-full px-4 py-1.5 mb-6">
           <Sparkles className="w-4 h-4 text-brand" />
@@ -268,7 +269,7 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </div>
     </div>
-    </HeroGeometric>
   );
 }

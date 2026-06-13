@@ -69,19 +69,19 @@ function ElegantShape({
     );
 }
 
-export function HeroGeometric({ children }: { children: React.ReactNode }) {
+export function HeroGeometric() {
     return (
-        <div className="relative w-full flex items-center justify-center overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.05] via-transparent to-sky-500/[0.05] blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.03] via-transparent to-sky-500/[0.03] blur-3xl" />
 
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute inset-0">
                 <ElegantShape
                     delay={0.3}
                     width={600}
                     height={140}
                     rotate={12}
                     gradient="from-blue-500/[0.15]"
-                    className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
+                    className="left-[-10%] md:left-[-5%] top-[5%] md:top-[10%]"
                 />
 
                 <ElegantShape
@@ -90,7 +90,7 @@ export function HeroGeometric({ children }: { children: React.ReactNode }) {
                     height={120}
                     rotate={-15}
                     gradient="from-sky-500/[0.15]"
-                    className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
+                    className="right-[-5%] md:right-[0%] top-[25%] md:top-[30%]"
                 />
 
                 <ElegantShape
@@ -99,7 +99,7 @@ export function HeroGeometric({ children }: { children: React.ReactNode }) {
                     height={80}
                     rotate={-8}
                     gradient="from-cyan-500/[0.15]"
-                    className="left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
+                    className="left-[5%] md:left-[10%] top-[45%] md:top-[50%]"
                 />
 
                 <ElegantShape
@@ -108,7 +108,7 @@ export function HeroGeometric({ children }: { children: React.ReactNode }) {
                     height={60}
                     rotate={20}
                     gradient="from-blue-400/[0.15]"
-                    className="right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
+                    className="right-[15%] md:right-[20%] top-[65%] md:top-[70%]"
                 />
 
                 <ElegantShape
@@ -117,16 +117,12 @@ export function HeroGeometric({ children }: { children: React.ReactNode }) {
                     height={40}
                     rotate={-25}
                     gradient="from-teal-500/[0.15]"
-                    className="left-[20%] md:left-[25%] top-[5%] md:top-[10%]"
+                    className="left-[20%] md:left-[25%] top-[85%] md:top-[90%]"
                 />
             </div>
 
-            <div className="relative z-10 w-full">
-                {children}
-            </div>
-
-            {/* Gradient mask to blend into the rest of the page */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0B] via-transparent to-[#0A0A0B]/80 pointer-events-none" />
+            {/* Gradient mask to blend into the rest of the page at the very bottom */}
+            <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-[#0A0A0B] to-transparent pointer-events-none" />
         </div>
     );
 }
